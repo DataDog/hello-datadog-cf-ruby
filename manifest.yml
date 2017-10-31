@@ -1,0 +1,7 @@
+---
+applications:
+  - name: hello-datadog-cf-ruby
+    memory: 256M
+    instances: 1
+    path: .
+    command: ruby app.rb
