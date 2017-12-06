@@ -1,7 +1,10 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    ddtrace (0.10.0)
+      msgpack
     dogstatsd-ruby (3.0.0)
+    msgpack (1.1.0)
     mustermann (1.0.1)
     rack (2.0.3)
     rack-protection (2.0.0)
@@ -17,6 +20,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  ddtrace
   dogstatsd-ruby
   sinatra
 
