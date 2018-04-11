@@ -10,7 +10,23 @@ Datadog.configure do |c|
 end
 
 get "/" do
-  statsd.increment('page.views', tags: ['index'])
+  statsd.increment('page.views', tags: ['page:index'])
 
   render :html, :index
+end
+
+get "/new-page" do
+  statsd.increment('page.views', tags: ['page:new-page'])
+
+  render :html, :index
+end
+
+get "/error" do
+  statsd.increment('page.views', tags: ['page:error-page'])
+
+  raise "error"
+end
+
+error do
+  "Error"
 end
