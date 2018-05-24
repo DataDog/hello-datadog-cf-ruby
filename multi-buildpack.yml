@@ -1,0 +1,4 @@
+buildpacks:
+  - "https://github.com/DataDog/datadog-cloudfoundry-buildpack#arbll/multi-buildpack-bin"
+  - "https://github.com/cloudfoundry/ruby-buildpack#v1.7.18"
+
