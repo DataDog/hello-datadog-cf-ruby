@@ -6,7 +6,7 @@ GEM
     dogstatsd-ruby (3.3.0)
     msgpack (1.2.4)
     mustermann (1.0.2)
-    rack (2.0.6)
+    rack (2.2.8.1)
     rack-protection (2.0.1)
       rack
     sinatra (2.0.1)
